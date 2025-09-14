@@ -15,13 +15,9 @@ import com.teste.minhalista2.ui.theme.MinhaLista2Theme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
         setContent {
             MinhaLista2Theme {
-                MinhaListaFavorita(
-
-                )
+                MinhaListaFavorita()
             }
         }
     }
