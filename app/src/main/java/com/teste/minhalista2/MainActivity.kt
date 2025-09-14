@@ -19,7 +19,9 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MinhaLista2Theme {
-                MinhaListaFavorita()
+                MinhaListaFavorita(
+
+                )
             }
         }
     }
@@ -27,22 +29,22 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MinhaListaFavorita() {
-    Column(modifier = Modifier.padding(16.dp)) {
+    Column(modifier = Modifier.padding(18.dp)) {
         Text(
-            text = "📝 Minha Lista de Coisas Favoritas",
+            text = "📝 Lista de Compras",
             fontSize = 22.sp
         )
 
         val lista = listOf(
-            "Personagens de dragon ball",
-            "Goku",
-            "Piccolo",
-            "Vegeta",
-            "Trunks",
-            "Yamcha",
-            "Kuririn",
-            "Bulma",
-            "Gohan"
+            "Banana",
+            "Melancia",
+            "Maçã",
+            "Goiaba",
+            "Melão",
+            "Abóbora",
+            "Tomate",
+            "Alface",
+            "Uva"
         )
 
         lista.forEach { item ->
